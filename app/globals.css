@@ -1,0 +1,485 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Aeonik-Regular";
+  src: url("/assets/font/Aeonik-Regular.otf");
+}
+
+@font-face {
+  font-family: "Aeonik-Black";
+  src: url("/assets/font/Aeonik-Black.otf");
+}
+
+@font-face {
+  font-family: "Aeonik-Bold";
+  src: url("/assets/font/Aeonik-Bold.otf");
+}
+
+@font-face {
+  font-family: "Aeonik-Light";
+  src: url("/assets/font/Aeonik-Light.otf");
+}
+
+@font-face {
+  font-family: "Aeonik-Thin";
+  src: url("/assets/font/Aeonik-Thin.otf");
+}
+
+@font-face {
+  font-family: "Aeonik-Medium";
+  src: url("/assets/font/Aeonik-Medium.otf");
+}
+
+:root {
+  --primary: #1c2a59;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 6px;
+  border: 3px solid #fff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primary);
+}
+
+#accessLog::-webkit-scrollbar {
+  width: 8px;
+}
+
+#accessLog::-webkit-scrollbar-track {
+  background: #e8e8e8 !important;
+}
+
+#accessLog::-webkit-scrollbar-thumb {
+  background: #666666 !important;
+  border: none !important;
+  border-radius: 4px !important;
+}
+
+body {
+  font-family: "Aeonik-Regular", sans-serif !important;
+  background: #fff;
+}
+
+.font-aeonik {
+  font-family: "Aeonik-Regular", sans-serif !important;
+}
+
+.font-aeonik-black {
+  font-family: "Aeonik-Black", sans-serif !important;
+}
+
+.font-aeonik-bold {
+  font-family: "Aeonik-Bold", sans-serif !important;
+}
+
+.font-aeonik-light {
+  font-family: "Aeonik-Light", sans-serif !important;
+}
+
+.font-aeonik-thin {
+  font-family: "Aeonik-Thin", sans-serif !important;
+}
+
+.font-aeonik-medium {
+  font-family: "Aeonik-Medium", sans-serif !important;
+}
+
+#consumerInfo {
+  background: url("../public/assets/img/auth/onboarding/consumerInfo/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+#addressDetails {
+  background: url("../public/assets/img/auth/onboarding/addressDetails/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+#contactPreferences {
+  background: url("../public/assets/img/auth/onboarding/contactPreferences/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+#contactVerification {
+  background: url("../public/assets/img/auth/onboarding/contactVerification/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+#login {
+  background: url("../public/assets/img/auth/login/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+#dashboard-welcome {
+  background: url("../public/assets/img/dashboard/welcome.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 1200px) {
+  #oldHome3-banner {
+    background: url("../public/assets/img/home/oldHome-3/banner/mobile-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.promise-gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(227, 237, 247, 1) 0%,
+    rgba(255, 255, 255, 1) 75%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.social-message::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: -20px;
+  right: 10%;
+  border-left: 100px solid transparent;
+  border-top: 30px solid #fff;
+}
+
+@media (min-width: 768px) {
+  .social-message::after {
+    bottom: -40px;
+    right: 10%;
+    border-left: 130px solid transparent;
+    border-top: 50px solid #fff;
+  }
+}
+
+.cross-mark::after {
+  content: "";
+  position: absolute;
+  background: #6d8bcf;
+  transform: rotate(45deg) translate(-50%, 0);
+  top: 0%;
+  left: 50%;
+  width: 7px;
+  height: 50px;
+}
+
+@media (max-width: 1600px) {
+  .cross-mark::after {
+    width: 7px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cross-mark::after {
+    width: 5px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .cross-mark::after {
+    width: 3px;
+    height: 23px;
+  }
+}
+
+.bg-sidebar {
+  background: url("../public/assets/img/dashboard/sidebar/bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bg-sidebar::-webkit-scrollbar-track {
+  background: url("../public/assets/img/dashboard/sidebar/bg.png") !important;
+  background-size: 100% 400% !important;
+  background-repeat: no-repeat !important;
+}
+
+.dashboard {
+  background: url("../public/assets/img/dashboard/bg.png");
+  background-size: 100% 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1024px) {
+  .dashboard {
+    background-size: cover;
+  }
+}
+
+.scrollbar-hidden {
+  scrollbar-width: none;
+}
+
+.blue-gradient {
+  background: rgb(216, 226, 251);
+  background: linear-gradient(
+    180deg,
+    rgba(216, 226, 251, 1) 0%,
+    rgba(238, 242, 252, 1) 61%
+  );
+}
+
+.red-gradient {
+  background: rgb(255, 212, 212);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 212, 212, 1) 0%,
+    rgba(255, 234, 234, 1) 61%
+  );
+}
+
+.green-gradient {
+  background: rgb(219, 255, 219);
+  background: linear-gradient(
+    180deg,
+    rgba(219, 255, 219, 1) 0%,
+    rgba(249, 255, 249, 1) 61%
+  );
+}
+
+.purple-gradient {
+  background: rgb(236, 228, 249);
+  background: linear-gradient(
+    180deg,
+    rgba(236, 228, 249, 1) 0%,
+    rgba(249, 247, 253, 1) 61%
+  );
+}
+
+.sky-gradient {
+  background: linear-gradient(
+    180deg,
+    rgba(201, 239, 249, 1) 0%,
+    rgba(225, 246, 250, 1) 45%,
+    rgba(122, 172, 217, 1) 55%,
+    rgba(70, 139, 202, 1) 100%
+  );
+  background-size: 100% 300%;
+  background-position: 0 0;
+  transition: background-position 0.4s ease-in-out;
+}
+
+.sky-gradient:hover {
+  background-position: 0 100%;
+}
+
+.switch-label {
+  background: rgb(0, 62, 244) !important;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 62, 244, 1) 0%,
+    rgba(0, 52, 158, 1) 66%
+  ) !important;
+}
+
+.green-switch-label {
+  background: #33cc00 !important;
+  box-shadow: 3px 1px 7px 0px rgb(0 0 0 / 44%) !important;
+}
+
+.white-green-switch-label {
+  background: #fff !important;
+  box-shadow: 3px 1px 7px 0px rgb(0 0 0 / 44%) !important;
+}
+
+.violet-switch-label {
+  background: #6633cc !important;
+  box-shadow: 3px 1px 7px 0px rgb(0 0 0 / 44%) !important;
+}
+
+.medium-blue-gradient {
+  background: rgb(119, 170, 216);
+  background: linear-gradient(
+    90deg,
+    rgba(119, 170, 216, 1) 0%,
+    rgba(70, 139, 202, 1) 45%,
+    #dae8f4 55%,
+    #dae8f4 100%
+  );
+  background-size: 300% 100%;
+  background-position: 0 0;
+}
+
+.medium-blue-gradient:hover {
+  background-position: 100% 0%;
+}
+
+.grey-gradient {
+  background: rgb(239, 243, 253);
+  background: linear-gradient(
+    180deg,
+    rgba(239, 243, 253, 1) 0%,
+    rgba(249, 250, 254, 1) 66%
+  );
+}
+
+.medium-sky-gradient {
+  background: rgb(237, 243, 250);
+  background: linear-gradient(
+    90deg,
+    rgba(237, 243, 250, 1) 0%,
+    rgba(232, 240, 248, 1) 35%,
+    rgba(215, 230, 243, 1) 100%
+  );
+}
+
+.faq-btn-gradient {
+  background: rgb(229, 239, 248);
+  background: linear-gradient(
+    90deg,
+    rgba(229, 239, 248, 1) 0%,
+    rgba(219, 233, 245, 1) 50%
+  );
+}
+
+.faq-blue-gradient {
+  background: rgb(119, 170, 216);
+  background: linear-gradient(
+    90deg,
+    rgba(119, 170, 216, 1) 0%,
+    rgba(70, 139, 202, 1) 45%,
+    #dae8f4 55%,
+    #dae8f4 100%
+  );
+  background-size: 300% 100%;
+  background-position: 0 0;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+.pink-gradient {
+  background: rgb(251, 236, 245);
+  background: linear-gradient(
+    180deg,
+    rgba(251, 236, 245, 1) 0%,
+    rgba(253, 244, 250, 1) 85%
+  );
+}
+
+.light-purple-gradient {
+  background: rgb(237, 231, 249);
+  background: linear-gradient(
+    180deg,
+    rgba(237, 231, 249, 1) 0%,
+    rgba(249, 247, 253, 1) 85%
+  );
+}
+
+.pink-gradient {
+  background: rgb(251, 236, 245);
+  background: linear-gradient(
+    180deg,
+    rgba(251, 236, 245, 1) 0%,
+    rgba(253, 244, 250, 1) 70%
+  );
+}
+
+.store-gradient {
+  background: rgb(133, 74, 192);
+  background: linear-gradient(
+    90deg,
+    rgba(133, 74, 192, 1) 0%,
+    rgba(102, 51, 153, 1) 86%
+  );
+}
+
+.hover-blue-text:hover {
+  text-shadow:
+    1px 1px 2px black,
+    0 0 25px rgb(0, 204, 255),
+    0 0 5px rgb(57, 60, 226);
+}
+
+.waiting {
+  background: url("../public/assets/img/auth/register/waiting.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+#approve-signup {
+  background: url("../public/assets/img/auth/approve/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+#deny-signup {
+  background: url("../public/assets/img/auth/deny/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+/* mui grid custom css */
+.MuiPaper-root-MuiDrawer-paper, 
+.MuiDataGrid-footerContainer, 
+.MuiDataGrid-root, 
+.MuiDataGrid-row, 
+.MuiDataGrid-column, 
+.MuiDataGrid, .MuiDataGrid-columnHeader{
+    border: 0 !important;
+}
+.MuiDataGrid-columnHeaderTitle{
+  font-size: 1.125rem !important;
+  line-height: 1.75rem !important;
+  font-family: "Aeonik-Bold", sans-serif !important;
+  letter-spacing: 0.01071em;
+  display: table-cell;
+  vertical-align: inherit;
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+  text-align: left;
+  padding: 16px;
+   color: rgba(0, 0, 0, 0.87);
+  font-weight: 500;
+  min-width: 200px;
+}
+.MuiDataGrid-columnHeader{
+  background-color: #f1f5f9;
+}
+.MuiDataGrid-root--noToolbar [aria-rowindex="1"] [aria-colindex="1"] {
+  border-top-left-radius: 0.75rem !important;
+  border-bottom-left-radius: 0.75rem;
+}
+.MuiDataGrid-root--noToolbar [aria-rowindex="1"] .MuiDataGrid-columnHeader--last{
+  border-top-right-radius: 0.75rem !important;
+  border-bottom-right-radius: 0.75rem;
+}
+.select-organization-text{
+  font-size: 24px;
+}

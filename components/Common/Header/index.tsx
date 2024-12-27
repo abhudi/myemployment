@@ -1,0 +1,9 @@
+export { RegisterHeader } from "./RegisterHeader";
+export { OnboardingHeader } from "./OnboardingHeader";
+export { LoginHeader } from "./LoginHeader";
+export { HomeHeader } from "./HomeHeader";
+export { HomeHeader2 } from "./HomeHeader2";
+export { DashboardHeader } from "./DashboardHeader";
+export { OldDashboardHeader } from "./OldDashboardHeader";
+export { OldHomeHeader2 } from "./OldHomeHeader2";
+export { OldHomeHeader3 } from "./OldHomeHeader3";
